@@ -1,37 +1,38 @@
-#fusion_ad {
-  margin-top: 30px;
-  text-align: center;
-
-  .fusionimg {
-    display: block;
-    margin: 0 auto 8px;
-    text-align: center;
-  }
-
-  .fusiontext {
-    color: $reversed-link-color;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 13px !important;
-    text-decoration: none;
-
-    &:hover {
-      color: $reversed-link-hover-color;
-      text-decoration: underline;
-    }
-  }
-
-  .fusionpowered {
-    color: $reversed-text-color;
-    display: block;
+@media #{$large-up} {
+  #fusion_ad {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: $sans-serif;
     font-size: 11px;
-    text-decoration: none;
+    width: 130px;
 
-    &:hover { color: $reversed-link-hover-color; }
+    img {
+      display: block;
+      height: 100px;
+      width: 130px;
+    }
 
-    span {
-      font-weight: bold;
+    a {
+      color: #939399;
+      text-decoration: none;
+      &:first-of-type {
+        display: block;
+      }
+    }
+
+    a.fusion-backlink {
+      position: absolute;
+      top: -22px;
+      font-weight: 700;
       text-transform: uppercase;
+    }
+
+    a.fusiontext {
+      display: block;
+      font-family: $serif;
+      line-height: 1.4;
+      margin-top: 7px;
     }
   }
 }
